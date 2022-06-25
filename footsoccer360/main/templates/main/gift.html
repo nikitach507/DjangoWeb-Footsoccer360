@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Dárkový formulář{% endblock %}
+
+{% block content %}
+ <div class="gift_page">
+     <h1>Dárkový formulář</h1>
+     <p>Ahoj, nyní chceme rozdat vstupenky na finálový zápas Ligy mistrů. 28.04.2022 vybereme 5 výherců. Podmínky budou velmi jednoduché:
+         napište alespoň 3 komentáře pod jakýkoli článek,
+         vyplňte níže uvedený formulář (všechna data jsou důvěrná)</p>
+     <form class="form_for_gift" method="post">
+         {% csrf_token %}
+         {{ form.first_name_participant }}<br>
+         {{ form.last_name_participant }}<br>
+         {{ form.email_participant }}<br>
+         {{ form.messenger_participant }}<br>
+         <span>{{ error }}</span>
+         <button class="btn btn-success" type="submit">Odeslat</button><br>
+         <a href="{% url 'gift_info' %}"><button class="btn btn-success" type="button">Všechny formulaře</button></a>
+     </form>
+ </div>
+{% endblock %}

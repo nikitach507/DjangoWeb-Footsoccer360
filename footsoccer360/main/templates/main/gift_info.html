@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Všechny formulaře{% endblock %}
+
+{% block content %}
+ <div class="features">
+     <h1>Všechny formulaře</h1>
+
+     {% if main %}
+        <table class="gift_table">
+             {% for el in main %}
+                <tr>
+                    <td>{{ el.first_name_participant }}</td>
+                    <td>{{ el.last_name_participant }}</td>
+                    <td>{{ el.email_participant }}</td>
+                </tr>
+             {% endfor %}
+        </table>
+     {% else %}
+        <p>Nemáte žádné formulaře</p>
+     {% endif %}
+
+     {# Komentáře #}
+ </div>
+{% endblock %}

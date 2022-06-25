@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Aktuality{% endblock %}
+
+{% block content %}
+ <div class="features">
+     <h1>Aktuality</h1>
+     {% if news %}
+         {% for el in news %}
+            <div class = "alert alert-danger">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons }}</p>
+                <p>{{ el.date }}</p>
+                <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Vice...</a>
+            </div>
+         {% endfor %}
+     {% else %}
+        <p>Nemáte žádné záznamy</p>
+     {% endif %}
+
+     {# Komentáře #}
+ </div>
+{% endblock %}

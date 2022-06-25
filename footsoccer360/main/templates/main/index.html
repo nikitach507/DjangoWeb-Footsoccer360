@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% load static %}
+{% block content %}
+     <div class="home_page">
+         <table class="home_table_news">
+             <tr>
+                 <td rowspan="3">
+                     <img class="home_img1_news" src="{% static 'main/img/mahrez.png' %}" alt="mahrez" >
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <img class="home_img2_news" src="{% static 'main/img/nunes.png' %}" alt="nunes" >
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <img class="home_img3_news" src="{% static 'main/img/realmadrid.png' %}" alt="nunes" >
+                 </td>
+             </tr>
+         </table>
+         <h3>Poslední novinky</h3>
+     </div>
+{% endblock %}
