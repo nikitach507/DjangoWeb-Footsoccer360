@@ -1,13 +1,70 @@
 {% extends 'main/layout.html' %}
 
 {% block title %}O nás{% endblock %}
-
+{% load static %}
 {% block content %}
-<div class="features">
-     <h1>O nás</h1>
-     <p>Footsoccer360 jsou vlámské noviny, které pokrývají sport.
-         Jeho webová stránka kombinuje výraznou typografii s vysoce kvalitními obrázky pro maximální čitelnost.
-         Používá také jiné písmo a barevné označení pro reklamy, aby je jasně odlišilo od článků. </p>
-     <button class="btn btn-warning">Zásady ochrany osobních údajů</button>
- </div>
+    <div class="about_page">
+        <section class="about_our">
+            <div>
+                <div >
+                    <div>
+                        <hr>
+                        <h1 class="about_h1">Our Story</h1>
+                        <hr>
+                    </div>
+
+                    <div class="about_our_block1">
+                        <h3>The importance of Leadership Conference in 2022</h3>
+
+                        <p>Leadership Event is one-page Bootstrap v5.1.3 CSS layout for your website. Thank you for choosing TemplateMo website where you can instantly download free CSS templates at no cost.</p>
+
+                        <a>Meet Speakers</a>
+
+                        <a>Check out Schedule</a>
+                    </div>
+
+                    <div class="about_our_block2" >
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</h3>
+                        <p>120+ People are attending with us</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about_contact">
+            <div>
+                <hr>
+                <h1 class="about_h1">Contacts</h1>
+                <hr>
+            </div>
+            <div>
+                <table class="about_table_contact">
+                    <tr>
+                        <td rowspan="5">
+                            <img class="about_img_contact" src="{% static 'main/img/contact us.jpg' %}" alt="contact" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="about_table_td">
+                            <h3>FootSoccer360 Contact</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="about_table_td">
+                            <p>+420 702 548 394</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="about_table_td">
+                            <p>footsoccer.company@gmail.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Form</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
 {% endblock %}

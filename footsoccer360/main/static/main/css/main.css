@@ -1,284 +1,186 @@
 body {
-    background: #e3dfdf;
-    width: 100%;
-    color: black;
+    background: #e3dfdf; width: 100%; color: black;
 }
 h3.logo{
-    position: absolute;
-    top: 10px;
-    left: 1%;
-    color: #ffffff;
-    font-family: "Toppan Bunkyu Gothic";
+    position: absolute; top: 10px; left: 1%; color: #ffffff; font-family: "Toppan Bunkyu Gothic";
 }
 p.logo2{
-    position: absolute;
-    top: 9px;
-    left: 17%;
-    color: #ffffff;
-    font-family: "Toppan Bunkyu Gothic";
+    position: absolute; top: 9px; left: 17%; color: #ffffff; font-family: "Toppan Bunkyu Gothic";
 }
 .aside_one{
-    position: absolute;
-    width: 100%;
-    margin-top: -40px;
-    height: 25px;
-    border: none;
-    background: #e3dfdf;
+    position: absolute; width: 100%; margin-top: -40px; height: 25px; border: none; background: #e3dfdf;
 }
 .aside_one ul{
-    background-color: #192285;
-    height: 40px;
-    padding: 0px;
-    margin: 0px;
+    background-color: #192285; height: 40px; padding: 0px; margin: 0px;
 }
 .aside_one ul li {
-    text-align: center;
-    color: white;
-    display: block;
-    float: right;
-    margin-right: 20px;
-    font-size: 12px;
-    padding: 10px;
+    text-align: center; color: white; display: block; float: right; margin-right: 20px; font-size: 12px; padding: 10px;
 }
 .aside_one ul li:hover{
-    background-color: #e3dfdf;
-    color: #192285;
-    height: 100%;
-    text-decoration: none;
+    background-color: #e3dfdf; color: #192285; height: 100%; text-decoration: none;
 }
 .gift_button{
-    background: coral;
-    color: white;
-    border: 1px solid white;
-    font-size: 12px;
-    display: inline-block;
-    width: 200px;
-    padding: 0px;
+    background: coral; color: white; border: 1px solid white; font-size: 12px; display: inline-block; width: 200px; padding: 0px;
 }
 .gift_button:hover{
-    background-color: #e3dfdf;
-    color: #192285;
-    height: 100%;
-    transform: scale(1.05);
-    text-decoration: none;
+    background-color: #e3dfdf; color: #192285; height: 100%; transform: scale(1.05); text-decoration: none;
 }
 .aside_one ul li.li_button:hover{
-    background-color: #192285;
-    color: #192285;
-    height: 100%;
-    text-decoration: none;
+    background-color: #192285; color: #192285; height: 100%; text-decoration: none;
 }
 .aside_two{
-    position: absolute;
-    float: top;
-    background: #192285;
-    height: 50px;
-    width: 1440px;
-    padding: 20px;
-    color: white;
+    position: absolute; float: top; background: #192285; height: 50px; width: 1440px; padding: 20px; color: white;
 }
 .aside_two ul{
-    list-style: none;
-    background-color: #192285;
-    width: 100%;
-    height: 60px;
-    border: 2px solid white;
-    padding: 0px;
-    border-radius: 7px;
+    list-style: none; background-color: #192285; width: 100%; height: 60px; border: 2px solid white; padding: 0px; border-radius: 7px;
 }
 .aside_two ul li {
-    color: white;
-    text-align: center;
-    display: block;
-    float: right;
-    margin-right: 20px;
-    font-size: 14px;
-    padding: 16px;
+    color: white; text-align: center; display: block; float: right; margin-right: 20px; font-size: 14px; padding: 16px;
 }
 .aside_two ul li:hover{
-    background-color: #e3dfdf;
-    color: #192285;
-    height: 100%;
-    transform: scale(1.05);
-    text-decoration: none;
+    background-color: #e3dfdf; color: #192285; height: 100%; transform: scale(1.05); text-decoration: none;
 }
 .aside_two ul a{
-    color: white;
-    text-decoration: none;
+    color: white; text-decoration: none;
 }
 .aside_two ul a:hover{
-    background-color: #e3dfdf;
-    color: #192285;
-    transform: scale(1.05);
-    text-decoration: none;
+    background-color: #e3dfdf; color: #192285; transform: scale(1.05); text-decoration: none;
 }
 .sub_menu_two{
     display: none;
 }
 .aside_two ul li:hover .sub_menu_two{
-    display: block;
-    position: absolute;
-    background: #192285;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 15px;
-    margin-left: -15px;
+    display: block; position: absolute; background: #192285; border-radius: 8px; text-align: center; margin-top: 15px;margin-left: -15px;
 }
 .aside_two ul li:hover .sub_menu_two ul{
-    background: #192285;
-    border: 0;
+    background: #192285; border: 0;
 }
 .aside_two ul li:hover .sub_menu_two ul li{
-    width: 175px;
-    padding: 20px;
-    border-bottom: 1px dotted white;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
+    width: 175px; padding: 20px; border-bottom: 1px dotted white; background: transparent; border-radius: 0; text-align: left;
 }
 .aside_two ul li:hover .sub_menu_two ul li:last-child{
     border-bottom: none;
 }
 .aside_two ul li:hover .sub_menu_two ul li a{
-    color: white;
-    background: #192285;
-    font-size: 12px;
+    color: white; background: #192285; font-size: 12px;
 }
 .aside_two ul li:hover .sub_menu_two ul li a:hover{
-    color: #192285;
-    background: #e3dfdf;
-    display: block;
-    transform: scale(1.05);
+    color: #192285; background: #e3dfdf; display: block; transform: scale(1.05);
 }
 .for_category{
-    color: black;
-    margin-top: 40px;
-    margin-left: 50px;
-    width: 100%;
+    color: black; margin-top: 40px; margin-left: 50px; width: 100%;
 }
 .img_category{
-    width: 1440px;
-    overflow: hidden;
-    margin-top: 50px;
-    margin-left: -50px;
+    width: 1440px; overflow: hidden; margin-top: 50px; margin-left: -50px;
 }
 .bgform_for_category{
-    position: absolute;
-    background: #192285;
-    width: 1440px;
-    border: 3px solid #f1f1f1;
-    opacity: 0.8;
-    align-items: center;
-    margin-left: -50px;
-    top: 46%;
+    position: absolute; background: #192285; width: 1440px; border: 3px solid #f1f1f1; opacity: 0.8; align-items: center; margin-left: -50px; top: 46%;
 }
 .header_for_category {
-    font-size: 50px;
-    color: white;
-    line-height: 1.9;
-    text-align: center;
+    font-size: 50px; color: white; line-height: 1.9; text-align: center;
 }
 .text_for_category {
-    text-align: center;
-    color: white;
+    text-align: center; color: white;
 }
 .allnews_category{
-    border: 2px solid white;
-    width: 1050px;
+    border: 2px solid white; width: 1050px;
 }
 .news_category{
-    float: left;
-    border: 2px solid white;
-    width: 1000px;
-    height: 150px;
-    margin: 20px;
-    text-align: left;
+    float: left; border: 2px solid white; width: 1000px; height: 150px; margin: 20px; text-align: left;
 }
 .extra_category{
-    border: 2px solid white;
-    width: 300px;
+    border: 2px solid white; width: 300px;
 }
 .newsextra_category{
-    float: left;
-    border: 2px solid white;
-    width: 250px;
-    height: 100px;
-    margin: 20px;
-    text-align: center;
+    float: left; border: 2px solid white; width: 250px; height: 100px; margin: 20px; text-align: center;
 }
 .home_page {
-    float: top;
-    margin-top: 40px;
+    float: top; margin-top: 40px;
 }
 .home_page h3{
-    line-height: 4;
-    margin-left: 20px;
+    line-height: 4; margin-left: 20px;
 }
 .home_table_news{
-    float: left;
-    width: 20%;
-    height: 150px;
-    margin-left: 20px;
-    margin-top: 100px;
-    text-align: left;
+    float: left; width: 20%; height: 150px; margin-left: 20px; margin-top: 100px; text-align: left;
 }
 .home_img1_news{
-    border-radius: 10px;
-    width: 900px;
-    height: 500px;
+    border-radius: 10px; width: 900px; height: 500px;
 }
 .home_img2_news{
-    border-radius: 15px;
-    width: 500px;
-    height: 250px;
+    border-radius: 15px; width: 500px; height: 250px;
 }
 .home_img3_news{
-    border-radius: 15px;
-    width: 500px;
-    height: 250px;
+    border-radius: 15px; width: 500px; height: 250px;
 }
 .alert-danger{
-    float: left;
-    width: 22%;
-    height: 350px;
-    margin: 20px;
-    text-align: left;
+    float: left; width: 22%; height: 350px; margin: 20px; text-align: left;
 }
 .gift_table{
-    border: 1px solid white;
-    float: left;
-    width: 20%;
-    height: 150px;
-    margin: 20px;
-    text-align: left;
+    border: 1px solid white; float: left; width: 20%; height: 150px; margin: 20px; text-align: left;
 }
 form {
-    float: top;
-    margin: 10%;
-    width: 80%;
-    margin-top: 50px;
+    float: top; margin: 10%; width: 80%; margin-top: 50px;
 }
 .gift_page{
-    float: top;
-    margin-top: 40px;
+    float: top; margin-top: 40px;
 }
 .gift_page h1{
-    position: absolute;
-    float: top;
-    margin-top: 100px;
-    margin-left: 570px;
+    position: absolute; float: top; margin-top: 100px; margin-left: 570px;
 }
 .gift_page p{
-    position: absolute;
-    float: top;
-    width: 700px;
-    margin-left: 370px;
-    text-align: center;
-    margin-top: 200px;
+    position: absolute; float: top; width: 700px; margin-left: 370px; text-align: center; margin-top: 200px;
 }
 .form_for_gift{
-    position: absolute;
-    float: top;
-    text-align: center;
-    margin-top: 300px;
+    position: absolute; float: top; text-align: center;margin-top: 300px;
+}
+.about_page{
+    float: top; margin-top: 40px;
+}
+.about_page hr{
+    color: #192285; height: 4px;
+}
+.about_our{
+    position:absolute; margin-top: 150px; margin-left: 100px;
+}
+.about_h1{
+    line-height: 2; font-family: 'Vollkorn', bold; font-weight: 900;
+}
+.about_our_block1{
+    float: left; width: 500px;
+}
+.about_our_block1 h3{
+    width: 500px; float:left; font-weight: 900;
+}
+.about_our_block1 p{
+    width: 500px; font-weight: 100;
+}
+.about_our_block1 a{
+    width: 200px; float:left;
+}
+.about_our_block2{
+    float: right; width: 500px; margin-left: 200px;
+}
+.about_our_block2 h3{
+    width: 500px; float:right; font-weight: 900;
+}
+.about_our_block2 p{
+    width: 500px; font-weight: 100;
+}
+.about_contact{
+    position:absolute; margin-top: 500px; margin-left: 100px;
+}
+.about_table_contact{
+    border: 0px solid black;
+}
+.about_img_contact{
+    border-radius: 10px; width: 550px; height: 700px;
+}
+.about_table_td{
+    width: 690px; text-align: center; height: 50px;
+}
+.about_table_td h3{
+    font-weight: 900;
+}
+.about_table_td p{
+    font-weight: 900;
 }
