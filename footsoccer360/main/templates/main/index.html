@@ -1,5 +1,4 @@
 {% extends 'main/layout.html' %}
-
 {% block title %}{{ title }}{% endblock %}
 {% load static %}
 {% block content %}
@@ -21,6 +20,51 @@
                  </td>
              </tr>
          </table>
-         <h3>Poslední novinky</h3>
+         <div>
+             <h3>Poslední novinky</h3>
+             {% for p in posts %}
+                <div class = "news_home_type1">
+                    {% if p.photo %}
+                    <p><img class="news_home_photo_type1" src="{{p.photo.url}}"></p>
+                    {% endif %}
+                    <p class="design_news_home">Category: {{p.cat}}</p>
+                    <h5><a href="{{ p.get_absolute_url }}">{{ p.title|title }}</a></h5>
+                    <p>{{ p.full_text|truncatewords:15 }}</p>
+                    <p class="design_news_home">Date: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
+                </div>
+             {% endfor %}
+         </div>
+         <div class="home_pl_news">
+             <h3>Premier League</h3>
+             {% for p in posts %}
+             {% if p.cat_id == 1 %}
+                <div class = "news_home_type1">
+                    {% if p.photo %}
+                    <p><img class="news_home_photo_type1" src="{{p.photo.url}}"></p>
+                    {% endif %}
+                    <p class="design_news_home">Category: {{p.cat}}</p>
+                    <h5><a href="{{ p.get_absolute_url }}">{{ p.title|title }}</a></h5>
+                    <p>{{ p.full_text|truncatewords:15 }}</p>
+                    <p class="design_news_home">Date: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
+                </div>
+             {% endif %}
+             {% endfor %}
+         </div>
+         <div class="home_pl_news">
+             <h3>La Liga</h3>
+             {% for p in posts %}
+             {% if p.cat_id == 2 %}
+                <div class = "news_home_type1">
+                    {% if p.photo %}
+                    <p><img class="news_home_photo_type1" src="{{p.photo.url}}"></p>
+                    {% endif %}
+                    <p class="design_news_home">Category: {{p.cat}}</p>
+                    <h5><a href="{{ p.get_absolute_url }}">{{ p.title|title }}</a></h5>
+                    <p>{{ p.full_text|truncatewords:15 }}</p>
+                    <p class="design_news_home">Date: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
+                </div>
+             {% endif %}
+             {% endfor %}
+         </div>
      </div>
 {% endblock %}
